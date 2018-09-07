@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tron</title>
+</head>
+<body>
+<script>
+    let Cricle = function (r) {
+        if (r === undefined){r=1;}
+        this.radius = r;
+        this.color = "";
+        this.getRadius = function () {
+            return this.radius;
+        };
+        this.getArea = function () {
+            return Math.PI*r*r ;
+        };
+    };
+
+
+    let tron1 = new Cricle(2);
+    let radius = tron1.getRadius();
+    let area = tron1.getArea();
+
+alert("bán kính hình tròn là "+radius+", diện tích là "+area);
+</script>
+</body>
+</html>
